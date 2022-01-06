@@ -33,9 +33,10 @@ class _HomePageState extends State<HomePage> {
       ),
       // Constructor Method: Builder, ListView
       body: ListView.builder(
+        itemCount: 16,
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
-            title: Text('$index'),
+            title: Text('${index+1}'),
           );
         },
       ),
